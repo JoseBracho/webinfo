@@ -1,0 +1,66 @@
+.container-foo{
+    background-color: #161616;
+    display: flex;
+    justify-content: space-around;
+    height: 50vh;
+    width: 100%;
+}
+.footer-components{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    padding: 1rem;
+    width: 30%;
+}
+.logo-footer{
+    height: 7vh;
+}
+.description-footer{
+    height: 50%;
+    background-color: #161616;
+}
+.p-footer{
+    font-size: 1rem;
+    line-height: 1.7;
+}
+.card-footer-info{
+    text-align: center;
+    background-color: coral;
+    border-radius: 5px;
+    height: 30%;
+    opacity: 0.5;
+    padding-left: 10px;
+    width: 80%;
+}
+.center{
+    align-items: center;
+}
+
+@media (max-width: 460px) {
+    .container-foo{
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .footer-components{
+        width: 100%;
+    }
+    .logo-footer{
+        width: 100%;
+    }
+    .footer-components{
+        width: 100%;
+    }
+    .card-footer-info{
+        justify-content: space-between;
+        padding-bottom: 0.5rem;
+        flex-direction: column;
+        display: flex;
+        height: 10vh;
+        margin-bottom: 2vh;
+        width: 90%;
+    }
+}
+  

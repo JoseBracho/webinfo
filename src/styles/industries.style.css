@@ -1,0 +1,108 @@
+.industries{
+    background-color: #ffff;
+    justify-content: space-around;
+    display: flex;
+    height: 60vh;
+    position: relative;
+    width: 100vw;
+}
+.card-data-info, .card-enter-info, .card-service-info{
+    border: solid 1px #ff6903;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+    height: 70vh;
+    position: relative;
+    top: -85px;
+    width: 25%;
+}
+.card-data-info::before, .card-enter-info::before, .card-service-info::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8); 
+    z-index: 1; 
+}
+.card-data-info{
+    background-image: url("../assets/datacenter.svg");
+}
+.card-enter-info{
+    background-image: url("../assets/enterprise.svg");
+}
+.card-service-info{
+    background-image: url("../assets/provider.svg");
+}
+.title-card{
+    color: #ffffff;
+    font-size: 1.7rem;
+}
+.description-card{
+    color: #ffffff;
+    text-align: center;
+    text-shadow: none;
+    font-size: 1.4rem;
+}
+.title-description-card{
+    align-items: center;
+    display: flex;
+    height: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+}
+.card-button{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: flex-end;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+}
+.btn-card{
+    border: none;
+    border-radius: 5px;
+    color: #161616;
+    font-weight: 800;
+    font-size: 0.8rem;
+    background-color: #ff6903;
+    height: 20%;
+    width: 40%;
+}
+.btn-card:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.5s ease-in;
+}
+@media (max-width: 460px) {
+    .industries{
+        align-items: center;
+        flex-direction: column;
+        height: 80vh;
+        margin-top: 40vh;
+    }
+    .card-data-info, .card-enter-info, .card-service-info{
+        height: 1000vh;
+        margin-bottom: 1vh;
+        padding-top: 1rem;
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+        width: 90%;
+    }
+    .description-card{
+        font-size: 1rem;
+    }
+    .btn-card{
+        margin-top: 5vh;
+        height: 45%;
+    }
+}
+  

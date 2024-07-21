@@ -1,0 +1,156 @@
+.page-info{
+    height: 100vh;
+    width: 100vw;
+}
+.presentation{
+    display: flex;
+    height: 40vh;
+    width: 100%;
+}
+.presentation-title{
+    height: 100%;
+    padding: 30px;
+    width: 30%;
+}
+.presentation-description{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 2rem;
+    height: 100%;
+    width: 70%;
+}
+.about-link{
+    color: #ff6903;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+.about-link:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.description-txt{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-style: normal;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: none;
+    word-spacing: 2px;
+    line-height: 1.5;
+}
+.content-characteristics{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    height: 50vh;
+    width: 100%;
+}
+.characteristics-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 60%;
+    width: 100%;
+}
+.characteristics-subt{    
+  color: #161616;
+  font-size: 1rem;
+  opacity: 0.9;
+  text-shadow: none
+}
+.characteristics-icon{
+    height: 25%;
+    width: 30%;
+}
+.presentation-img{
+    background-size: contain;
+    height: 90%;
+    width: 55%;
+}
+.slogan{
+    margin: 0;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: -0.4px;
+    word-spacing: -1.2px;
+    color: #ff6903;
+    font-weight: 700;
+    font-style: italic;
+    font-variant: small-caps;
+    text-transform: capitalize;
+}
+.slogan-description{
+    margin-top: 10px;
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #161616;
+    font-weight: bold;
+    text-decoration: none;
+    font-variant: small-caps;
+}
+.characteristics{
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    padding: 1rem;
+    width: 30%;
+}
+.characteristics-title{
+    margin-bottom: 0.7rem;
+    font-size: 1.8rem;
+}
+@media (max-width: 460px) {
+    .page-info{
+        height: 80vh;
+    }
+    .presentation{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        display: flex;
+        height: 60vh;
+    }
+    .presentation-title{
+        height: 20vh;
+        padding: 10px;
+        width: 100%;
+    }
+    .presentation-description{
+        width: 100%;
+        padding: 1rem;
+    }
+    .slogan{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-top: 20px;
+    }
+    .slogan-description{
+        margin-top: 25px;
+        font-size: 1.5rem;
+    }
+    .description-txt{
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        line-height: 1.3;
+    }
+    .content-characteristics{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        display: flex;
+        height: 90vh;
+        width: 100%;
+    }
+    .characteristics{
+        justify-content: flex-start;
+        padding: 0.5rem;
+        height: 30vh;
+        width: 95%;
+    }
+}
+  
