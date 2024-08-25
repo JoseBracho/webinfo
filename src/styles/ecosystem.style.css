@@ -1,0 +1,107 @@
+.title-ecosystem-p{
+    background-image: url("../assets/ecosystem-title.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    height: 35vh;
+    flex-direction: column;
+    padding: 3rem;
+    position: relative;
+    width: 100%;
+}
+.title-ecosystem-p::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); 
+    z-index: 1; 
+}
+.ecosystem-titular{
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 3vh;
+    position: relative;
+    z-index: 5;
+}
+.ecosystem-description{
+    background-color: #fff;
+    display: flex;
+    height: 55vh;    
+    width: 100%;
+}
+.icon-ecosystem {
+    height: 100%;
+    width: 30%;
+}
+.d-ecosystem{
+    flex-direction: column;
+    display: flex;
+    height: 100%;
+    padding: 2rem;
+    width: 70%;
+}
+.d-ecosystem-p{
+    text-shadow: none;
+    margin-top: 2rem;
+    color: #161616;
+}
+.vendors-ecosystem-p{
+    background-color: #161616;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6vh;
+    position: relative;
+    width: 100%;
+}
+.card-ecoystem{
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    position: relative;
+    top: -40px;
+    margin-bottom: 2vh;
+    height: 25vh;
+    width: 90%;
+}
+.card-ecoystem-icon{
+    align-items: center;
+    background-color: #ffffff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 28%;
+}
+.card-ecosystem-img{
+    height: 90%;
+    width: 90%;
+}
+.card-ecoystem-d{
+    background-color: #f0eded;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 100%;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-right: 2rem;
+    width: 72%;
+}
+.title-vendor{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+}
+.des-vendor{
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  color: #161616;
+  cursor: default;
+  margin-top: 2rem;
+  text-shadow: none;
+}

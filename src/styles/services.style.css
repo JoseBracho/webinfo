@@ -1,0 +1,153 @@
+h4{
+    padding-right: 1rem;
+}
+.services-solution{
+    background-image: url("../assets/services/FLIGHT\ XR-9506\ DELAYED.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 35vh;
+    margin-top: 2vh;
+    position: relative;
+    width: 100%;
+}
+.services-solution::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8); 
+    z-index: 1; 
+}
+.services-title{
+    position: relative;
+    padding: 1rem;
+    z-index: 5;
+}
+.title-p{
+    color: #ffffff;
+}
+.services-description{
+    position: relative;
+    padding: 1rem;
+    width: 60%;
+    z-index: 5;
+}
+.des-services{
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+    cursor: default;
+    text-shadow: none;
+}
+.services-section{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+.services-tabs{
+    align-items: center;
+    display: flex;
+    height: 15vh;
+    top: -50px;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+}
+.tabs{
+    border: 1px solid #161616;
+    border-radius: 5px;
+    height: 80%;
+    width: 20%;
+}
+.tabs-btn{
+    background-color: #ff6903;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.tabs-icon{
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 50%;
+}
+.tabs-dec{
+    align-items: center;
+    color: #ffffff;
+    cursor: default;
+    display: flex;
+    font-size: 1.25rem;
+    height: 100%;
+    justify-content: center;
+    margin-top: 0;
+    padding-right: 2px;
+    text-shadow: none; 
+}
+.tabs:hover, .tabs-btn:hover, .tabs-dec:hover, .tabs-icon:hover{
+    cursor: pointer;
+    opacity: 0.9;
+    transition: opacity 0.5s ease;
+}
+.tabs-btn.active {
+    background-color: #ffffff; 
+}
+.tabs-btn.active .tabs-dec {
+    color: #161616; 
+}
+.services-img{
+    height: 70%;
+    width: 55%;
+}
+.services-info{
+    display: flex;
+    height: 90%;
+    position: absolute;
+    top: 3.5rem;
+    width: 100%;
+}
+.diag-services{
+    padding-top: 2rem;
+    height: 100%;
+    width: 70%;
+}
+.log-sergices{
+    height: 100%;
+    width: 30%;
+}
+.tit-services{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 75%;
+    padding-left: 4rem;
+    padding-top: 1rem;
+    width: 100%;
+}
+.tit-p{
+  font-size: 3rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-shadow: none;
+  margin-bottom: 2rem;
+  cursor: default;
+}
+.des-service{
+    margin-top: 1rem;
+    width: 100%;
+}
+.p1{
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #161616;
+    padding: 1.5rem;
+    cursor: default;
+    text-shadow: none;
+}

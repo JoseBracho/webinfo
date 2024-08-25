@@ -4,6 +4,7 @@ import './App.css';
 
 import Home from './pages/Home';
 import Ecosystem from './pages/Ecosystem';
+import Services from './pages/Services';
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
           <Routes>
             <Route path='/' element={<Home />}/>
             <Route path='/ecosystem' element={<Ecosystem />}/>
+            <Route path='/services' element={<Services />}/>
           </Routes>
         </div>
   );

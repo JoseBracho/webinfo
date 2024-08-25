@@ -1,9 +1,9 @@
-import logo from "../assets/mk-logo.png"
-import logo1 from "../assets/cisco-logo.png"
-import logo2 from "../assets/fg-logo.png"
-import logo3 from "../assets/pan-logo.png"
-import logo4 from "../assets/junos-logo.png"
-import logo5 from "../assets/huawei-logo.png"
+import logo from "../assets//vendors/mk-logo.png"
+import logo1 from "../assets/vendors/cisco-logo.png"
+import logo2 from "../assets/vendors/fg-logo.png"
+import logo3 from "../assets/vendors/pan-logo.png"
+import logo4 from "../assets/vendors/junos-logo.png"
+import logo5 from "../assets/vendors/huawei-logo.png"
 
 export const Technology = () => {
     return(
