@@ -5,6 +5,7 @@ import './App.css';
 import Home from './pages/Home';
 import Ecosystem from './pages/Ecosystem';
 import Services from './pages/Services';
+import Industries from './pages/Industries';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
             <Route path='/' element={<Home />}/>
             <Route path='/ecosystem' element={<Ecosystem />}/>
             <Route path='/services' element={<Services />}/>
+            <Route path='/industries' element={<Industries />}/>
           </Routes>
         </div>
   );

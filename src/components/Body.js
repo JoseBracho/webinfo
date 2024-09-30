@@ -23,7 +23,7 @@ export const Body = () =>{
                         <h4 className="font-color-w">Expertise in routing, switching, and NetOps, available across various timezones.</h4>
                     </div>
                     <div className="explore mg-460">
-                        <Link><p className='next font-color-w'>Explore <FontAwesomeIcon icon={faArrowRight}/></p></Link>
+                        <Link to={`/services?activeTab=Network+Engineering`}><p className='next font-color-w'>Explore <FontAwesomeIcon icon={faArrowRight}/></p></Link>
                     </div>
                 </div>
                 <div className="info net-2">
@@ -32,7 +32,7 @@ export const Body = () =>{
                         <h4 className='font-color-w'>A robust network foundation designed to accelerate your business growth.</h4>
                     </div>
                     <div className="explore mg-460">
-                        <Link><p className='next font-color-w'>Explore <FontAwesomeIcon icon={faArrowRight}/></p></Link>
+                        <Link to={`/services?activeTab=Network+Design+and+Architecture`}><p className='next font-color-w'>Explore <FontAwesomeIcon icon={faArrowRight}/></p></Link>
                     </div>
                 </div>
                 <div className="info net-3">
@@ -41,7 +41,7 @@ export const Body = () =>{
                         <h4 className='font-color-w'>Comprehensive auditing and documentation of routing, switching, and NetOps, with support available globally.</h4>
                     </div>
                     <div className="explore mg-460">
-                        <Link><p className='next font-color-w'>Explore <FontAwesomeIcon icon={faArrowRight}/></p></Link>
+                        <Link to={`/services?activeTab=Network+Audit+and+Documentation`}><p className='next font-color-w'>Explore <FontAwesomeIcon icon={faArrowRight}/></p></Link>
                     </div>
                 </div>
                 <div className="info net-in">
@@ -50,7 +50,7 @@ export const Body = () =>{
                         <h4 className="font-color-w">Extend your teams capabilities with our backup and support services where necessary.</h4>
                     </div>
                     <div className="explore mg-460">
-                        <Link><p className='next font-color-w'>Explore <FontAwesomeIcon icon={faArrowRight}/></p></Link>
+                        <Link to={`/services?activeTab=Managed+Network+Services`}><p className='next font-color-w'>Explore <FontAwesomeIcon icon={faArrowRight}/></p></Link>
                     </div>
                 </div>
             </div>

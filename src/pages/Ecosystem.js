@@ -31,6 +31,7 @@ import grafana from "../assets/vendors/grafana-logo.svg"
 import netbox from "../assets/vendors/netbox-logo.svg"
 import mimosa from "../assets/vendors/mimosa-logo.png"
 import solutek from "../assets/solutek-01.svg"
+import { useEffect } from "react";
 
 const Ecosystem = () =>{
     const card = [
@@ -228,6 +229,9 @@ const Ecosystem = () =>{
             "width": '70%'
         },
     ]
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return(
         <div>
             <div className='head'>

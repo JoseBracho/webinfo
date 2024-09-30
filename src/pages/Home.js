@@ -32,8 +32,8 @@ return(
             <Technology />
         </div>
         <div className='industries'>
-            <CardTechnology title={'Enterprise Networking'} description={'Critical network infrastructure empowering your growth.'} background={"card-enter-info"}/>
-            <CardTechnology title={'Datacenter & IX'} description={'Connect high throughput, high capacity transport around the world.'} background={"card-data-info"}/>
+            <CardTechnology title={'Enterprise Networking'} description={'Critical network infrastructure empowering your growth.'} background={"card-enter-info"} path={"Enterprise"}/>
+            <CardTechnology title={'Datacenter & IX'} description={'Connect high throughput, high capacity transport around the world.'} background={"card-data-info"} path={"Datacenter+Network"} />
             <CardTechnology title={'Service Providers'} description={'Reliable, scalable solutions tailored to service providers, ensuring seamless and efficient delivery of network services.'} background={"card-service-info"}/>
         </div>
         <footer className='container-foo'>

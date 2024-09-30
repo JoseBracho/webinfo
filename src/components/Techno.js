@@ -4,6 +4,7 @@ import logo2 from "../assets/vendors/fg-logo.png"
 import logo3 from "../assets/vendors/pan-logo.png"
 import logo4 from "../assets/vendors/junos-logo.png"
 import logo5 from "../assets/vendors/huawei-logo.png"
+import { Link } from "react-router-dom"
 
 export const Technology = () => {
     return(
@@ -35,7 +36,7 @@ export const Technology = () => {
                 </div>
             </div>
             <div className="interests">
-                <button className="btn-ecosystem">Full Portfolio of Expertise</button>
+                <button className="btn-ecosystem"><Link to="/ecosystem" className="link-techno">Full Portfolio of Expertise</Link></button>
                 <div className="interests-c">
                     <h1 className="interests-t">Industries We Connect</h1>
                     <p className="interests-d">Solutek  serves clients across all sectors. Our unique perspective and extensive experience enable us to introduce innovative ideas, network architectures, and solutions that might not be readily apparent.</p>

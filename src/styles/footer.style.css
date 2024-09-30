@@ -2,40 +2,76 @@
     background-color: #161616;
     display: flex;
     justify-content: space-around;
-    height: 50vh;
+    height: 40vh;
     width: 100%;
 }
-.footer-components{
+.footer-components, .footer-components-c{
+    flex-wrap: wrap;
     align-items: flex-start;
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: space-around;
     padding: 1rem;
-    width: 30%;
+    width: 39%;
+}
+.footer-components-c{
+    width: 25%
+}
+.col-01, .col-02{
+    width: 35%;
+    height: 90%;
+}
+.col-02{
+    width: 60%;
+}
+.col-01, .col-02{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;    
+}
+.col-01-t{
+    color: #fff;
+    width: 100%;
+    opacity: 0.8;
+    font-size: 1rem;
+}
+.col-01-tt{
+    color: coral;
+    width: 100%;
+    font-size: 1.2rem;
 }
 .logo-footer{
-    height: 7vh;
+    height: 10vh;
 }
 .description-footer{
     height: 50%;
     background-color: #161616;
 }
 .p-footer{
+    opacity: 0.8;
     font-size: 1rem;
     line-height: 1.7;
 }
 .card-footer-info{
     text-align: center;
-    background-color: coral;
     border-radius: 5px;
     height: 30%;
-    opacity: 0.5;
     padding-left: 10px;
     width: 80%;
 }
 .center{
+    padding-top: 1.5rem;
     align-items: center;
+}
+.title-footer{
+    color: coral;
+    margin-top: 0;
+    text-shadow: none;
+}
+.des-footer{
+    opacity: 0.8;
+    margin-top: 1rem;
 }
 
 @media (max-width: 460px) {

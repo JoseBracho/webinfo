@@ -2,28 +2,26 @@ import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Footer } from "../components/Footer";
 import { Head } from "../components/head";
-import { TabsNetwork } from '../components/TabsNetwork';
 import { TabsDesign } from '../components/TabsDesign';
 import { TabsDocumentation } from '../components/TabsDocumentation';
-import { TabsManaged } from '../components/TabsManaged';
 
 import network from "../assets/services/computer.png";
 import machine from "../assets/services/machine.png";
 import search from "../assets/services/search.png";
-import process from "../assets/services/process.png";
 import net from "../assets/services/network.png";
 
 import "../styles/services.style.css";
+import { TabsEnterprises } from '../components/TabsEnterprise';
 
-const Services = () => {
+const Industries = () => {
     const location = useLocation();
-    const params = new URLSearchParams(location.search);  // Obtener los parámetros de la URL
-    const activeTabParam = params.get('activeTab');  // Captura el valor del parámetro "activeTab"
+    const params = new URLSearchParams(location.search);  
+    const activeTabParam = params.get('activeTab');  
 
-    const [activeTab, setActiveTab] = useState(activeTabParam || "Network Engineering");  // Valor inicial con el parámetro o por defecto
+    const [activeTab, setActiveTab] = useState(activeTabParam || "Enterprise");  
     const [activeContent, setActiveContent] = useState({
-        title: "Network Engineering",
-        description: "We are ready to delve into the intricacies of your network deployment. Let’s execute your network architecture together."
+        title: "Enterprise Networking",
+        description: "We develop essential infrastructure for businesses, from emerging startups to global industry leaders, across the world."
     });
 
     useEffect(() => {
@@ -34,15 +32,15 @@ const Services = () => {
         if (activeTabParam) {
             setActiveTab(activeTabParam);
             switch (activeTabParam) {
-                case "Network Engineering":
+                case "Enterprise":
                     setActiveContent({
-                        title: "Network Engineering",
-                        description: "We are ready to delve into the intricacies of your network deployment. Let’s execute your network architecture together."
+                        title: "Enterprise Networking",
+                        description: "We develop essential infrastructure for businesses, from emerging startups to global industry leaders, across the world."
                     });
                     break;
-                case "Network Design and Architecture":
+                case "Datacenter Network":
                     setActiveContent({
-                        title: "Network Design and Architecture",
+                        title: "Datacenter Network",
                         description: "We specialize in designing and architecting scalable and reliable network solutions tailored to your business needs."
                     });
                     break;
@@ -50,12 +48,6 @@ const Services = () => {
                     setActiveContent({
                         title: "Network Audit and Documentation",
                         description: "Our team conducts thorough network audits and provides detailed documentation to ensure your network is optimized and compliant."
-                    });
-                    break;
-                case "Managed Network Services":
-                    setActiveContent({
-                        title: "Managed Network Services",
-                        description: "We offer managed network services to keep your infrastructure running smoothly and securely."
                     });
                     break;
                 default:
@@ -71,14 +63,12 @@ const Services = () => {
 
     const renderActiveTabContent = () => {
         switch (activeTab) {
-            case "Network Engineering":
-                return <TabsNetwork />;
-            case "Network Design and Architecture":
+            case "Enterprise":
+                return <TabsEnterprises />;
+            case "Datacenter Network":
                 return <TabsDesign />;
             case "Network Audit and Documentation":
                 return <TabsDocumentation />;
-            case "Managed Network Services":
-                return <TabsManaged />
             default:
                 return null;
         }
@@ -101,20 +91,20 @@ const Services = () => {
                 <div className="services-tabs">
                     <div className="tabs">
                         <button
-                            className={`tabs-btn ${activeTab === "Network Engineering" ? 'active' : ''}`}
-                            onClick={() => handleTabClick("Network Engineering", "Network Engineering", "We are ready to delve into the intricacies of your network deployment. Let’s execute your network architecture together.")}
+                            className={`tabs-btn ${activeTab === "Enterprise" ? 'active' : ''}`}
+                            onClick={() => handleTabClick("Enterprise", "Enterprise Networking", "We develop essential infrastructure for businesses, from emerging startups to global industry leaders, across the world.")}
                         >
-                            <div className="tabs-icon"><img src={network} alt="Network Engineering" className="services-img" /></div>
-                            <h3 className="tabs-dec">Network Engineering</h3>
+                            <div className="tabs-icon"><img src={network} alt="Enterprise" className="services-img" /></div>
+                            <h3 className="tabs-dec">Enterprise Networking</h3>
                         </button>
                     </div>
                     <div className="tabs">
                         <button
-                            className={`tabs-btn ${activeTab === "Network Design and Architecture" ? 'active' : ''}`}
-                            onClick={() => handleTabClick("Network Design and Architecture", "Network Design and Architecture", "We specialize in designing and architecting scalable and reliable network solutions tailored to your business needs.")}
+                            className={`tabs-btn ${activeTab === "Datacenter Network" ? 'active' : ''}`}
+                            onClick={() => handleTabClick("Datacenter Network", "Datacenter Network", "We specialize in designing and architecting scalable and reliable network solutions tailored to your business needs.")}
                         >
-                            <div className="tabs-icon"><img src={machine} alt="Network Design and Architecture" className="services-img" /></div>
-                            <h3 className="tabs-dec">Network Design and Architecture</h3>
+                            <div className="tabs-icon"><img src={machine} alt="Datacenter Network" className="services-img" /></div>
+                            <h3 className="tabs-dec">Datacenter Network</h3>
                         </button>
                     </div>
                     <div className="tabs">
@@ -124,15 +114,6 @@ const Services = () => {
                         >
                             <div className="tabs-icon"><img src={search} alt="Network Audit and Documentation" className="services-img" /></div>
                             <h3 className="tabs-dec">Network Audit and Documentation</h3>
-                        </button>
-                    </div>
-                    <div className="tabs">
-                        <button
-                            className={`tabs-btn ${activeTab === "Managed Network Services" ? 'active' : ''}`}
-                            onClick={() => handleTabClick("Managed Network Services", "Managed Network Services", "We offer managed network services to keep your infrastructure running smoothly and securely.")}
-                        >
-                            <div className="tabs-icon"><img src={process} alt="Managed Network Services" className="services-img" /></div>
-                            <h3 className="tabs-dec">Managed Network Services</h3>
                         </button>
                     </div>
                 </div>
@@ -154,4 +135,4 @@ const Services = () => {
     );
 };
 
-export default Services;
+export default Industries;

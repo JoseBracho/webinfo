@@ -4,6 +4,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import logo from "../assets/title_1.svg"
 import logo1 from "../assets/title_2.svg"
 import logo2 from "../assets/title_3.svg"
+import { Link } from 'react-router-dom';
 
 export const Info = () => { 
     return(
@@ -15,7 +16,7 @@ export const Info = () => {
                 </div>
                 <div className="presentation-description">
                     <h2 className="description-txt">Solutek is an expanding PYME, founded in 2019 and based in Maracaibo, Venezuela. We specialize in offering Networking and Telecommunications services both remotely and in-person anywhere in the world, serving ISPs and related businesses. Our core business focuses on support, design and implementation, adapting our work methodologies to the specific needs of each client. We work by project, hourly or through monthly payments. We offer multi-vendor solutions, which allows us to provide the best cost-effective option for your business.</h2>
-                    <h2 className="about-link">Meet The Team <FontAwesomeIcon icon={faArrowRight}/></h2>
+                    <h2 className="about-link"><Link  style={{color: '#ff6903'}}>Meet The Team <FontAwesomeIcon icon={faArrowRight}/></Link></h2>
                 </div>
             </div>
             <div className="content-characteristics"> 
