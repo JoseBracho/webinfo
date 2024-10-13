@@ -157,3 +157,42 @@ h4{
     height: 80%;
     width: 100%;
 }
+
+@media (max-width: 460px) {
+    .services-tabs{
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+        height: 40vh;
+        top: 2px;
+        justify-content: space-around;
+        position: absolute;
+        width: 100%;
+        z-index: 5;
+    }
+    .tabs{
+        margin-top: 1px;
+        height: 25%;
+        width: 90%;
+    }
+    .services-info{
+        align-items: center;
+        flex-direction: column;
+        height: 90%;
+        top: 22rem;
+    }
+    .log-sergices{
+        padding-top: 2rem;
+        padding-left: 1rem;
+        height: 30%;
+        width: 70%;
+    }
+    .diag-services{
+        padding-top: 2rem;
+        height: 100%;
+        width: 100%;
+    }
+    .m-5{
+        margin-top: 50rem;
+    }
+}

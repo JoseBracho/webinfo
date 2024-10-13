@@ -56,11 +56,11 @@ const Ecosystem = () =>{
             "height": '50%',
             "width": '70%'
         },
-        {
-            "title": "FiberStore (FS)",
-            "description": "Delivers high-quality networking equipment, including fiber optic products and switches, aimed at optimizing data transmission and network performance.",
-            "img": ""
-        },
+        // {
+        //     "title": "FiberStore (FS)",
+        //     "description": "Delivers high-quality networking equipment, including fiber optic products and switches, aimed at optimizing data transmission and network performance.",
+        //     "img": ""
+        // },
         {
             "title": "Huawei",
             "description": "Offers a broad range of networking products, including routers, switches, and wireless solutions, tailored for robust and efficient network infrastructures.",

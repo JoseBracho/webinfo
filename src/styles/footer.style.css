@@ -25,13 +25,15 @@
 .col-02{
     width: 60%;
 }
+.color{
+    color: #fff;
+}
 .col-01, .col-02{
     display: flex;
     flex-direction: column;
     justify-content: space-around;    
 }
 .col-01-t{
-    color: #fff;
     width: 100%;
     opacity: 0.8;
     font-size: 1rem;
@@ -40,6 +42,9 @@
     color: coral;
     width: 100%;
     font-size: 1.2rem;
+}
+.col-01-t:hover{
+    cursor: pointer;
 }
 .logo-footer{
     height: 10vh;
@@ -89,14 +94,21 @@
     .footer-components{
         width: 100%;
     }
+    .footer-components-c{
+        padding: 0.5rem;
+        width: 100%;
+        height: 30%;
+    }
     .card-footer-info{
-        justify-content: space-between;
-        padding-bottom: 0.5rem;
-        flex-direction: column;
-        display: flex;
-        height: 10vh;
-        margin-bottom: 2vh;
+        height: 8vh;
         width: 90%;
+    }
+    .des-footer{
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+    .center{
+        padding-top: 0;
     }
 }
   

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import logo from "../assets/solutek-01.svg"
 
 export const Footer = () => {
@@ -25,17 +26,17 @@ export const Footer = () => {
             <div className="footer-components">
                 <div className='col-01'>
                     <h5 className="col-01-tt">Learn More</h5>
-                    <h5 className="col-01-t">Home</h5>
-                    <h5 className="col-01-t">Ecosystem</h5>
-                    <h5 className="col-01-t">Industries</h5>
-                    <h5 className="col-01-t">Services</h5>
+                    <h5 className="col-01-t"><Link to="/" className="color">Home</Link></h5>
+                    <h5 className="col-01-t"><Link to="/ecosystem" className="color">Ecosystem</Link></h5>
+                    <h5 className="col-01-t"><Link to="/industries" className="color">Industries</Link></h5>
+                    <h5 className="col-01-t"><Link to="/services" className="color">Services</Link></h5>
                 </div>
                 <div className='col-02'>
                 <h5 className="col-01-tt">Services</h5>
-                <h5 className="col-01-t">Network Engineering</h5>
-                <h5 className="col-01-t">Network Design and Architecture</h5>
-                <h5 className="col-01-t">Network Audit and Documentation</h5>
-                <h5 className="col-01-t">Managed Network Services</h5>
+                <h5 className="col-01-t"><Link to={'/services?activeTab=Network+Engineering'} className="color">Network Engineering</Link></h5>
+                <h5 className="col-01-t"><Link to={'/services?activeTab=Network+Design+and+Architecture'} className="color">Network Design and Architecture</Link></h5>
+                <h5 className="col-01-t"><Link to={'/services?activeTab=Network+Audit+and+Documentation'} className="color">Network Audit and Documentation</Link></h5>
+                <h5 className="col-01-t"><Link to={`/services?activeTab=Managed+Network+Services`} className="color">Managed Network Services</Link></h5>
                 </div>
             </div>
         </>

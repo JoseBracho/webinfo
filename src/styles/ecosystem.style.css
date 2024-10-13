@@ -105,3 +105,31 @@
   margin-top: 2rem;
   text-shadow: none;
 }
+
+@media (max-width: 460px) {
+    .card-ecoystem{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        top: -40px;
+        margin-bottom: 2vh;
+        height: 40vh;
+        width: 95%;
+    }
+    .card-ecoystem-icon{
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        height: 35%;
+        width: 100%;
+    }
+    .card-ecoystem-d{
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        height: 65%;
+        padding-left: 1rem;
+        padding-top: 1rem;
+        padding-right: 1rem;
+        width: 100%;
+    }
+}
+  

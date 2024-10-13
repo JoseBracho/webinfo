@@ -13,10 +13,11 @@ export const Head = () => {
                 <div className='communication-data'>
                     <div className='communication-menu'>
                         <ul className="menu">
-                            <li><Link to="/" className="menu-item">BLOG</Link></li>
-                            <li><Link to="/" className="menu-item">CONTÁCTENOS</Link></li>
-                            <li><Link to="/" className="menu-item">joseluisbracho0@gmail.com</Link></li>
-                            <li><Link to="/" className="menu-item">+58 (424) 6518602</Link></li>
+                            <li><Link className="menu-item">CONTÁCTENOS</Link></li>
+                            <li className='barra'></li>
+                            <li><Link className="menu-item">joseluisbracho0@gmail.com</Link></li>
+                            <li className='barra'></li>
+                            <li><Link className="menu-item">+58 (424) 6518602</Link></li>
                         </ul>
                     </div>
                 </div>

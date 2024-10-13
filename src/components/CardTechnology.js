@@ -8,7 +8,7 @@ export const CardTechnology = ({title, description, background, path}) => {
                     <p className="description-card">{description}</p>
                 </div>
                 <div className="card-button">
-                    <button className="btn-card"><Link to={`/industries?activeTab=${path}`}>Explore</Link></button>
+                    <button className="btn-card"><Link className="color-card" to={`/industries?activeTab=${path}`}>Explore</Link></button>
                 </div>
             </div>
     )

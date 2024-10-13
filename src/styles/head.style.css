@@ -36,14 +36,14 @@
   background-color: #161616;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 8% 100%);
   height: 80%;
-  width: 50%;
+  width: 45%;
 }
 .communication-menu{
   display: flex;
   height: 100%;
   flex-direction: column;
   justify-content: center;
-  width: 95%;
+  width: 100%;
 }
 .menu {
   align-items: center;
@@ -55,24 +55,29 @@
   width: 100%;
   gap: 10px;
 }
+.barra{
+  border-right: 1px solid hsl(0, 0%, 75%);
+  height: 6vh;
+  opacity: 0.8;
+  
+}
 .menu-item {
-  padding: 5px 10px;
-  margin: 0 auto;
-  display: inline-block;
+  align-items: center;
+  display: flex;
+  box-sizing: border-box;
   color: #ff6903;
   text-decoration: none;
-  text-align: center;
-  border-right: 1px solid hsl(0, 0%, 75%);
+  justify-content: center;
+  height: 6vh;
   opacity: 0.8;
-  width: auto;
   white-space: nowrap;
-  box-sizing: border-box;
   max-width: 100%; 
   overflow: hidden;
   text-overflow: ellipsis;
+  width: 100%;
 }
 .menu-item:hover{
-  opacity: 0.6;
+  cursor: default;
 }
 .communication-language{
   height: 80%;

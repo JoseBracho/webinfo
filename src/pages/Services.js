@@ -147,7 +147,7 @@ const Services = () => {
                     </div>
                 </div>
             </div>
-            <footer className='container-foo'>
+            <footer className='container-foo m-5'>
                 <Footer />
             </footer>
         </div>

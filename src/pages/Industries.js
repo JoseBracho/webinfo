@@ -128,7 +128,7 @@ const Industries = () => {
                     </div>
                 </div>
             </div>
-            <footer className='container-foo'>
+            <footer className='container-foo m-3'>
                 <Footer />
             </footer>
         </div>

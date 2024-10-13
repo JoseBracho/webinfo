@@ -8,11 +8,11 @@ import { Link } from "react-router-dom"
 
 export const Technology = () => {
     return(
-        <div>
+        <>
             <div className="ecosystem">
                 <div className="ecosystem-title">
                     <h1 className="ecosystem-t">Ecosystem</h1>
-                    <p>Solutek maintains an unbiased approach, free from any single vendor allegiance. We regularly engage with diverse technologies and platforms, cultivating a broad spectrum of expertise. This positions us uniquely to offer valuable insights, ensure interoperability, and provide comprehensive planning for multi-vendor projects.</p>
+                    <p className="des-techno">Solutek maintains an unbiased approach, free from any single vendor allegiance. We regularly engage with diverse technologies and platforms, cultivating a broad spectrum of expertise. This positions us uniquely to offer valuable insights, ensure interoperability, and provide comprehensive planning for multi-vendor projects.</p>
                 </div>
                 <div className="ecosystem-techno background">
                     <div className="vendor-img">
@@ -42,6 +42,6 @@ export const Technology = () => {
                     <p className="interests-d">Solutek  serves clients across all sectors. Our unique perspective and extensive experience enable us to introduce innovative ideas, network architectures, and solutions that might not be readily apparent.</p>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
