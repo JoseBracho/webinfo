@@ -38,7 +38,6 @@ export const Head = () => {
 			        <li>
                         <Link to="/industries">Industries</Link>
                     </li>
-			        <li><Link to="/consulting">Consulting Team</Link></li>
 		        </ul>
 	        </nav>
             <HamburgerMenu />

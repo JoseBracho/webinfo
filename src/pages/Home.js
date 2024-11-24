@@ -1,11 +1,11 @@
 import React from 'react';
 
 import { Head } from '../components/head';
-import { Body } from '../components/Body';
 import { Info } from '../components/Info';
 import { Technology } from '../components/Techno';
 import { CardTechnology } from '../components/CardTechnology';
 import { Footer } from '../components/Footer';
+import { Body } from '../components/Body';
 
 import "../styles/body.style.css"
 import '../styles/head.style.css'
